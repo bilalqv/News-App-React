@@ -10,6 +10,7 @@ Features:
 What we have learnt:
 
 -> To create responsive web pages.
+
 ->To use Rest API's to fetch data.
 
 
