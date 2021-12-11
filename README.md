@@ -13,5 +13,3 @@ What we have learnt:
 
 ->To use Rest API's to fetch data.
 
-
-Made with some help from Dear Sayib ( https://github.com/mirsayib/ )
