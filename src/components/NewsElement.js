@@ -7,7 +7,6 @@ import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -38,7 +37,7 @@ export default function NewsElement({  element }) {
               component="img"
               height="194"
               image= {element.urlToImage}
-              alt="Paella dish"
+              alt="image"
           />
           <CardContent>
               <Typography variant="h6" color="text.secondary">

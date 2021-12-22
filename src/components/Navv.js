@@ -1,4 +1,3 @@
-import Search from "./Search";
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -6,7 +5,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
-import { useState } from "react";
 import { Icon } from "semantic-ui-react";
 
 const Navv = ({ setCountry, setSource, query, setQuery, setUrl }) => {
