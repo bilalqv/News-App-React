@@ -1,18 +1,19 @@
 We have built this React News App which fetches news from all over the world from multiple sources using newsApi(https://newsapi.org/).
 
 
-Features:
+### Features:
 
--> Fetches news filtered by different categories, country and sources
+1) Fetches news filtered by different categories, countries and sources
 
--> Search Feature that fetches news matching the keyword entered
--> Styled using react-bootstrap, Material-UI, semantic-UI and Masonry
+2) Search Feature that fetches news matching the keyword entered
 
-What we have learnt:
+3) Styled using react-bootstrap, Material-UI, semantic-UI and Masonry
 
--> To create responsive web pages.
+### What we have learnt:
 
-->To use Rest API's to fetch data.
+1) To create responsive web pages.
+
+2) To use Rest API's to fetch data.
 
 ![](src/images/img2.png)
 
