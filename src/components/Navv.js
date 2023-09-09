@@ -8,6 +8,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import { Icon } from "semantic-ui-react";
 
 const Navv = ({ setCountry, setSource, query, setQuery, setUrl }) => {
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const handleClick1 = (event) => {
     setCountry(event.currentTarget.getAttribute('value'))
@@ -20,7 +21,7 @@ const Navv = ({ setCountry, setSource, query, setQuery, setUrl }) => {
   
 
   const handleSubmit =() =>{
-    setUrl(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=d7b527f571184b27a3c4c28316dc11fe`)
+    setUrl(`https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${apiKey}`)
     setQuery("");
   }
 

@@ -7,19 +7,20 @@ import useFetch from './hooks/useFetch';
 import Tagg from './components/Tagg';
 
 function App() {
+  const apiKey = process.env.REACT_APP_API_KEY;
   const [category, setCategory] = useState("business");
   const [country, setCountry] = useState("in");
   const [source, setSource] = useState("");
-  const [url, setUrl] = useState( `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=d7b527f571184b27a3c4c28316dc11fe` ) ;
+  const [url, setUrl] = useState( `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}` ) ;
   const [query, setQuery] = useState("");
-  const {data: data, error, isPending} =  useFetch(url);
+  const {data, error, isPending} =  useFetch(url);
 
   useEffect( ()=>{
     if(source !== ""){
-        setUrl(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=d7b527f571184b27a3c4c28316dc11fe`)
+        setUrl(`https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`)
     }
     else{
-        setUrl(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=d7b527f571184b27a3c4c28316dc11fe`)
+        setUrl(`https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}`)
     }
 }, [source, category, country] )
 
